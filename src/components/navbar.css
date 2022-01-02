@@ -1,0 +1,120 @@
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 10px;
+}
+.glowing-circle-wrapper {
+  position: relative;
+  /* overflow: hidden; */
+}
+.glowing-circle {
+  background-image: url("../../public/assets/images/hero_blue_circlenew.svg");
+  width: 1464px;
+  height: 1447px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: -578px;
+  left: -834px;
+  z-index: -1;
+}
+.logo-menu-items {
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+.logo-image {
+  width: 60px;
+  margin-right: 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+.navbar-menu-ul {
+  display: flex;
+  align-items: center;
+}
+.navbar-menu-li {
+  margin: 0 10px;
+}
+.navbar-menu-a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.5px;
+  padding: 3px 10px;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+.navbar-menu-a:hover {
+  background-color: #082745;
+}
+.navbar-menu-a-img {
+  margin-right: 5px;
+  width: 15px;
+}
+.nav-end-bar-wrapper {
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+.login-btn {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.5px;
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.login-user-img {
+  margin-right: 6px;
+  width: 15px;
+}
+.sign-up-btn {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.5px;
+  border: 1px solid #21bf96;
+  border-radius: 9999px;
+  padding: 8px 18px;
+  transition-duration: 300ms;
+  cursor: pointer;
+}
+.sign-up-btn:hover {
+  background-color: #21bf96;
+  transition-duration: 200ms;
+}
+
+@media (min-width: 993px) and (max-width: 1089px) {
+  .navbar-menu-a {
+    font-size: 15px;
+  }
+  .sign-up-btn {
+    font-size: 15px;
+    padding: 6px 10px;
+  }
+  .sign-up-btn:hover {
+    background-color: #21bf96;
+    transition-duration: 200ms;
+  }
+  .login-btn {
+    font-size: 15px;
+  }
+}
+@media (max-width: 992px) {
+  .logo-menu-items {
+    display: none;
+  }
+  .nav-end-bar-wrapper {
+    display: none;
+  }
+}
